@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="materialize.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+</head>
+
+<body cz-shortcut-listen="true">
+    <div id="root">
+        <div class="app-container">
+            <div class="modal_container hidden" style="display: none;">
+                <div class="modal_window"><button class="close_btn"><svg width="24" height="25" viewBox="0 0 30 31"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.17039 0.441604C2.47878 -0.0165649 3.10019 -0.13799 3.55836 0.170392C7.32232 2.70383 10.5323 5.59073 13.6393 8.49163C14.109 8.93015 14.576 9.36862 15.042 9.80623C17.6727 12.2764 20.2742 14.7191 23.1724 16.9907C23.7153 17.4162 24.2358 17.9081 24.7246 18.3745C24.7613 18.4094 24.7977 18.4443 24.8341 18.479C25.294 18.9182 25.7292 19.3337 26.178 19.7078C27.1522 20.5197 28.0361 21 29 21C29.5523 21 30 21.4477 30 22C30 22.5523 29.5523 23 29 23C27.3265 23 25.9869 22.152 24.8976 21.2442C24.3941 20.8246 23.9111 20.3632 23.4613 19.9335C23.4219 19.8959 23.3828 19.8585 23.3439 19.8214C22.8492 19.3494 22.3945 18.9221 21.9387 18.5648C18.9642 16.2335 16.2897 13.7218 13.6608 11.2529C13.1977 10.8181 12.7361 10.3845 12.2744 9.9535C9.17815 7.06264 6.06538 4.26865 2.4416 1.82957C1.98343 1.52119 1.86201 0.899772 2.17039 0.441604Z"
+                                fill="black"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M25.9864 2.83558C26.0772 3.38035 25.7092 3.89558 25.1644 3.98637C23.6827 4.23332 22.1212 5.35476 20.5725 6.91204C19.3628 8.12848 18.266 9.49807 17.2963 10.7089C17.0394 11.0297 16.7914 11.3394 16.5526 11.6321C15.0363 13.4909 13.3357 14.9499 11.6043 16.2853C10.8899 16.8363 10.1907 17.3519 9.49703 17.8634C8.46597 18.6237 7.44715 19.375 6.40905 20.22C5.28827 21.1323 4.17374 22.7721 3.3349 24.6528C2.49857 26.5279 2 28.4996 2 30C2 30.5523 1.55228 31 1 31C0.447715 31 0 30.5523 0 30C0 28.1297 0.60063 25.8733 1.50835 23.8382C2.41355 21.8086 3.68791 19.8561 5.14651 18.6689C6.20262 17.8092 7.31002 16.9915 8.38365 16.1988C9.07134 15.691 9.74518 15.1934 10.3828 14.7017C12.0607 13.4075 13.6256 12.0562 15.0029 10.3679C15.2207 10.1009 15.4537 9.80975 15.7004 9.50152C16.6742 8.28498 17.8603 6.80308 19.1544 5.50177C20.7579 3.88931 22.6988 2.36972 24.8356 2.01359C25.3804 1.92279 25.8956 2.29081 25.9864 2.83558Z"
+                                fill="black"></path>
+                        </svg></button>
+                    <div class="body_wrap">
+                        <div class="wallet_type"><img src="/assets/metamask-b6c1ae7d.svg" alt="metamask.svg">
+                            <h2>MetaMask</h2>
+                            <p>Connect to the provider in your browser</p>
+                        </div>
+                        <hr>
+                        <div class="wallet_type"><img src="/assets/walletConnect-41131912.svg" alt="walletConnect.svg">
+                            <h2>WalletConnect</h2>
+                            <p>Scan with WalletConnect to connect</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header>
+                <div class="BG"></div>
+                <div class="wrap left"><a class="logo" href="/">mooshes</a><a href="/shitcoin"><img
+                            src="/assets/Coin-d263972b.png" alt="Coin.png"></a><a href="/"><img
+                            src="/assets/Head-afc3952d.svg" alt="Head.svg"></a></div>
+                <div class="wrap">
+                    <div class="button-container"><svg class="outline-draw" width="170" height="70"
+                            viewBox="0 0 201 108" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 170px;">
+                            <path
+                                d="M39.0687 73.8771C41.9987 80.7071 40.0587 108.307 53.1887 105.677C56.2687 105.057 60.0987 94.6971 60.3687 94.9471C62.2287 96.6571 64.3487 114.007 66.6187 103.807C67.4787 99.9571 74.4487 81.6471 79.5087 88.6471C80.7487 90.3671 91.6287 107.997 92.8887 102.427C93.8087 98.3771 95.4087 95.0271 97.9087 91.6971C101.539 86.8571 104.149 92.2171 106.959 96.1271C107.379 96.7071 110.649 104.267 112.079 103.857C113.209 103.537 115.349 96.4971 115.719 95.3371C116.329 93.4171 116.849 89.6471 118.769 88.4471C121.319 86.8471 129.879 96.3071 131.659 97.7471C133.459 99.1971 139.809 105.407 142.679 103.607C146.059 101.487 145.299 93.6971 146.319 90.2671C147.169 87.4171 148.429 84.0171 149.759 81.3571C149.889 81.0871 149.709 82.0171 149.909 82.2471C150.939 83.4471 153.939 81.6571 154.779 81.2171C162.539 77.0671 167.979 70.0171 174.509 64.5771C178.259 61.4571 160.559 61.4771 158.869 61.4771C155.239 61.4771 159.979 61.1871 161.179 60.6871C170.079 57.0071 180.749 52.1271 188.429 46.3571C190.379 44.8871 204.969 34.5971 198.219 32.6271C193.719 31.3171 184.109 30.4771 182.529 24.5571C178.979 11.2271 169.139 4.57714 155.569 2.00714C151.609 1.25714 143.459 -0.692858 141.399 4.31714C140.629 6.18714 141.159 8.15714 140.709 10.0771C139.139 16.7371 131.699 4.84714 128.899 2.98714C120.649 -2.52286 120.969 10.4171 119.459 15.5871C118.269 19.6471 117.589 22.5171 114.739 18.4471C110.329 12.1271 103.979 5.05714 96.3387 2.74714C87.5387 0.0871415 89.8287 11.9671 86.1087 16.6271C85.7187 17.1171 85.3687 15.6171 85.0287 15.0971C83.0787 12.1471 80.9387 9.56714 77.7487 7.90714C71.9187 4.87714 64.3387 3.51714 57.9687 5.73714C55.0887 6.74714 53.1387 13.9471 52.7087 13.4671C51.4987 12.1271 50.8187 9.58714 49.1187 8.78714C44.0687 6.42714 36.4987 20.0371 34.2587 22.6671C28.4687 29.4671 23.9287 37.1271 18.3687 43.9371C16.1087 46.6971 17.9887 36.7671 17.1387 33.3071C16.6587 31.3271 8.97866 47.4171 8.13866 49.3071C5.50866 55.1971 1.34866 61.5371 1.00866 68.1571C0.718656 73.7571 7.80866 65.0871 8.28866 64.4671C13.5487 57.7171 17.9687 50.6271 24.5187 45.0171C25.6787 44.0271 30.0587 42.7171 31.4587 43.8371C32.4487 44.6271 28.0887 48.7871 27.7687 49.2571C23.5187 55.4071 18.8687 65.0071 29.5387 65.0071C34.8187 65.0071 35.1287 66.3471 33.0787 71.2071C31.5387 74.8571 35.5987 75.6371 38.1987 75.6371"
+                                stroke="black" stroke-width="2" stroke-linecap="round"></path>
+                        </svg><button>Buy</button></div>
+                </div>
+                <div class="wrap right">
+                    <div class="button-container"><svg class="outline-draw" width="383" height="86" viewBox="0 0 383 86"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.5092 38.4945C16.6963 38.4945 17.26 35.6705 18.4046 34.0436C20.056 31.6964 22.4549 30.1229 24.5697 28.3306C28.8841 24.6742 33.4445 21.1479 37.8201 17.7018C40.2611 15.7794 45.75 14.5795 48.8622 14.5795C52.5658 14.5795 55.9837 15.5435 59.6588 16.041C62.1644 16.3802 65.2011 16.7195 67.2349 18.4325C69.5567 20.3881 74.3236 21.9194 77.2034 22.4183C82.8713 23.4004 88.1817 24.7434 94.0118 24.7434C105.401 24.7434 116.589 22.2243 127.69 19.3957C133.613 17.8864 137.111 16.6428 142.075 13.417C145.899 10.9324 150.419 7.91368 154.743 6.67434C156.054 6.29853 157.597 5.02546 158.884 4.3825C160.785 3.4322 162.609 2.68508 164.681 2.15708C168.64 1.14818 170.768 5.27143 174.005 6.77399C176.552 7.95604 178.931 9.98347 181.52 11.3245C185.785 13.5336 190.238 15.7753 195.046 15.7753C202.916 15.7753 210.669 16.0692 218.235 14.5795C223.356 13.5711 228.128 11.552 233.203 10.6934C238.928 9.72458 244.852 9.98527 250.563 9.13226C255.406 8.40887 258.076 8.02478 262.924 8.89976C268.587 9.92184 273.649 11.5902 279.395 11.5902C283.229 11.5902 286.498 10.6267 290.253 9.66371C292.491 9.08981 294.729 9.17192 296.97 8.60082C298.615 8.18174 300.75 7.40508 302.43 7.40508C305.873 7.40508 310.022 6.64978 313.196 8.36831C316.925 10.3874 317.875 13.3838 322.275 13.3838C329.458 13.3838 336.627 12.7859 343.868 12.7859C347.572 12.7859 351.239 12.1881 354.849 12.1881C356.834 12.1881 358.691 14.9291 360.002 16.506C362.764 19.8289 367.393 21.0636 369.51 25.0755C370.952 27.8077 373.889 30.9829 374.51 34.0104C374.858 35.7039 376.504 36.574 376.688 38.3616C376.921 40.6341 378.303 43.8874 379.019 46.1339C380.277 50.0856 382.602 59.3268 379.326 62.8744C378.533 63.7332 377.25 64.801 376.657 65.7641C375.566 67.5357 374.675 66.9958 373.498 67.9231C372.394 68.7925 370.864 68.5547 369.756 69.3181C368.444 70.2222 367.315 70.8831 365.891 71.4439C363.162 72.5187 360.614 75.1999 357.886 76.4926C352.882 78.863 347.919 79.5039 342.703 81.2092C334.852 83.7756 325.976 83.9328 317.797 83.9328C311.778 83.9328 305.336 84.4765 299.516 82.4713C298.642 82.1702 297.152 81.5413 296.326 81.5413C292.129 81.5413 286.633 80.2739 282.585 79.1498C278.046 77.8894 273.542 77.9395 269.151 76.2933C262.393 73.7601 254.265 76.686 247.496 74.0679C244.231 72.8053 239.298 73.769 235.902 73.769C229.624 73.769 223.347 73.769 217.069 73.769C206.644 73.769 196.339 74.9647 185.967 74.9647C171.921 74.9647 158.184 77.9562 144.253 79.1166C137.417 79.686 130.64 78.5519 123.825 78.5519C120.145 78.5519 116.464 78.5519 112.783 78.5519C107.998 78.5519 103.213 78.5519 98.4286 78.5519C94.7609 78.5519 90.4501 79.2619 86.8651 78.4855C84.0125 77.8677 81.0573 77.7368 78.1849 77.0905C76.0942 76.62 72.6955 76.5307 70.8235 75.2636C68.6643 73.8023 65.2984 73.8574 62.8487 73.769C60.2366 73.6747 57.8601 72.5732 55.242 72.5732C51.1017 72.5732 46.9272 72.7392 42.789 72.5732C38.7847 72.4126 34.8926 70.1817 30.7962 70.1817C27.9745 70.1817 24.4681 68.9972 21.6558 68.3881C19.1282 67.8407 15.7183 68.4386 13.405 67.3252C9.69933 65.5417 5.59872 62.8682 2.79235 59.5529C1.30936 57.8009 2.36294 51.8432 2.36294 49.2562C2.36294 46.5024 4.56136 44.4953 6.77975 43.8089C8.90154 43.1524 13.405 42.5629 13.405 39.6902"
+                                stroke="black" stroke-width="3" stroke-linecap="round"></path>
+                        </svg><button class="btn margin connect"><span>Connect wallet</span></button></div>
+                </div>
+            </header>
+            <main class="home-container">
+                <section class="slide">
+                    <div class="part">
+                        <h1>mooshes</h1>
+                        <p>Meet Mooshes - the stick figure that roasts everyone online. He's got quick wit, snappy
+                            comebacks, and a personality as spicy as a jalapeno. But this isn't just any art project -
+                            it's a social commentary on the wild world of online humor.</p>
+                    </div>
+                    <div class="part horizontal">
+                        <div class="wrap">
+                            <h2>Welcome</h2>
+                            <p>From playful banter to downright offensive insults, Mooshes takes us on a journey through
+                                the highs and lows of internet culture. So, grab some popcorn and get ready to LOL or
+                                cringe - it's about to get real in here.</p>
+                        </div><img src="/assets/dude-62c8e86f.jpg" alt="dude.jpg">
+                    </div>
+                </section>
+                <section class="slide">
+                    <div class="part">
+                        <h2>Lore</h2>
+                        <p>At first glance, a Moosh is a Moosh. Nothing more, nothing less. However, beyond the surface,
+                            Mooshes have a whole array of emotions they deal with.</p>
+                    </div>
+                    <div class="slider-wrap">
+                        <button class="slider-button"><svg width="39" height="67"
+                                viewBox="0 0 39 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M36.7124 2.49602C36.1166 0.112685 29.591 7.02527 28.7124 8.2738C24.9579 13.6092 19.6957 17.6238 15.268 22.0516C13.1084 24.2111 9.85229 24.3841 7.49018 26.2738C6.54121 27.033 4.40088 27.3358 3.2124 27.996C0.142604 29.7015 3.77113 31.6575 4.60129 33.9405C6.70251 39.7188 14.8173 45.1564 18.9346 49.2738C21.0852 51.4244 23.661 55.4549 26.2124 57.496C27.2362 58.315 26.5756 60.3335 26.7124 61.496C26.8961 63.0574 28.7124 63.0879 28.7124 65.496"
+                                    stroke="#93A1B5" stroke-width="3" stroke-linecap="round"></path>
+                            </svg></button>
+                        <!-- <div class="slider-container">
+                            <div class="images-handler" style="left: 171.5px;">
+                                <img src="/Homepage/Slider/1.webp"
+                                    alt="/Homepage/Slider/1.webp" width="300" height="300" loading="lazy"
+                                    class="image selected">
+                                    <img src="/Homepage/Slider/2.webp"
+                                    alt="/Homepage/Slider/2.webp" width="300" height="300" loading="lazy"
+                                    class="image preselected"><img src="/Homepage/Slider/3.webp"
+                                    alt="/Homepage/Slider/3.webp" width="300" height="300" loading="lazy"
+                                    class="image"><img src="/Homepage/Slider/4.webp" alt="/Homepage/Slider/4.webp"
+                                    width="300" height="300" loading="lazy" class="image"><img
+                                    src="/Homepage/Slider/5.webp" alt="/Homepage/Slider/5.webp" width="300" height="300"
+                                    loading="lazy" class="image"><img src="/Homepage/Slider/6.webp"
+                                    alt="/Homepage/Slider/6.webp" width="300" height="300" loading="lazy"
+                                    class="image"><img src="/Homepage/Slider/7.webp" alt="/Homepage/Slider/7.webp"
+                                    width="300" height="300" loading="lazy" class="image"><img
+                                    src="/Homepage/Slider/8.webp" alt="/Homepage/Slider/8.webp" width="300" height="300"
+                                    loading="lazy" class="image"><img src="/Homepage/Slider/9.webp"
+                                    alt="/Homepage/Slider/9.webp" width="300" height="300" loading="lazy"
+                                    class="image"><img src="/Homepage/Slider/10.webp" alt="/Homepage/Slider/10.webp"
+                                    width="300" height="300" loading="lazy" class="image"><img
+                                    src="/Homepage/Slider/11.webp" alt="/Homepage/Slider/11.webp" width="300"
+                                    height="300" loading="lazy" class="image"><img src="/Homepage/Slider/12.webp"
+                                    alt="/Homepage/Slider/12.webp" width="300" height="300" loading="lazy"
+                                    class="image"><img src="/Homepage/Slider/13.webp" alt="/Homepage/Slider/13.webp"
+                                    width="300" height="300" loading="lazy" class="image"><img
+                                    src="/Homepage/Slider/14.webp" alt="/Homepage/Slider/14.webp" width="300"
+                                    height="300" loading="lazy" class="image"><img src="/Homepage/Slider/15.webp"
+                                    alt="/Homepage/Slider/15.webp" width="300" height="300" loading="lazy"
+                                    class="image"></div>
+
+                        </div> -->
+                        <div class="carousel-box">
+                            <div class="carousel">
+                              <div class="carousel-item">
+                                <div>
+                                <div class="image">
+                                  <img src="/Homepage/Slider/1.webp">
+                                </div>  
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div>
+                                  <div class="image">
+                                    <img src="/Homepage/Slider/2.webp">
+                                  </div>  
+                                  </div>        
+                              </div>
+                              <div class="carousel-item">
+                                <div>
+                                  <div class="image">
+                                    <img src="/Homepage/Slider/3.webp">
+                                  </div>  
+                                  </div>       
+                              </div>
+                              <div class="carousel-item">
+                                <div>
+                                  <div class="image">
+                                    <img src="/Homepage/Slider/4.webp">
+                                  </div>  
+                                  </div>        
+                              </div>
+                              <div class="carousel-item">
+                                <div>
+                                  <div class="image">
+                                    <img src="/Homepage/Slider/5.webp">
+                                  </div>
+                                  </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div>
+                                  <div class="image">
+                                    <img src="/Homepage/Slider/6.webp">
+                                  </div>  
+                                  </div>        
+                              </div>
+                              <div class="carousel-item">
+                                <div>
+                                  <div class="image">
+                                    <img src="/Homepage/Slider/7.webp">
+                                  </div>  
+                                  </div>        
+                              </div>
+                              <div class="carousel-item">
+                                <div>
+                                  <div class="image">
+                                    <img src="/Homepage/Slider/8.webp">
+                                  </div>  
+                                  </div>        
+                              </div>
+                              <div class="carousel-item">
+                                <div>
+                                  <div class="image">
+                                    <img src="/Homepage/Slider/9.webp">
+                                  </div>  
+                                  </div>        
+                              </div>
+                              <div class="carousel-item">
+                                <div>
+                                  <div class="image">
+                                    <img src="/Homepage/Slider/15.webp">
+                                  </div>  
+                                  </div>        
+                              </div>
+                              
+                              
+                            </div>
+                            </div>
+                        <button class="slider-button"><svg width="39" height="67" viewBox="0 0 39 67" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 2.49602C2.59583 0.112685 9.12141 7.02527 10 8.2738C13.7545 13.6092 19.0167 17.6238 23.4444 22.0516C25.604 24.2111 28.8601 24.3841 31.2222 26.2738C32.1712 27.033 34.3115 27.3358 35.5 27.996C38.5698 29.7015 34.9413 31.6575 34.1111 33.9405C32.0099 39.7188 23.8951 45.1564 19.7778 49.2738C17.6272 51.4244 15.0514 55.4549 12.5 57.496C11.4762 58.315 12.1368 60.3335 12 61.496C11.8163 63.0574 10 63.0879 10 65.496"
+                                    stroke="#93A1B5" stroke-width="3" stroke-linecap="round"></path>
+                            </svg></button>
+                    </div>
+                    
+                    <!-- <div class="carousel-box">
+                        <div class="carousel">
+                          <div class="carousel-item">
+                            <div>
+                            <div class="image">
+                              <img src="/Homepage/Slider/1.webp">
+                            </div>  
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div>
+                              <div class="image">
+                                <img src="/Homepage/Slider/2.webp">
+                              </div>  
+                              </div>        
+                          </div>
+                          <div class="carousel-item">
+                            <div>
+                              <div class="image">
+                                <img src="/Homepage/Slider/3.webp">
+                              </div>  
+                              </div>       
+                          </div>
+                          <div class="carousel-item">
+                            <div>
+                              <div class="image">
+                                <img src="/Homepage/Slider/4.webp">
+                              </div>  
+                              </div>        
+                          </div>
+                          <div class="carousel-item">
+                            <div>
+                              <div class="image">
+                                <img src="/Homepage/Slider/5.webp">
+                              </div>  
+                              </div>        
+                          </div>
+                          
+                        </div>
+                        </div> -->
+                    <div class="part">
+                        <div class="text-container left">
+                            <p>From spurts of joy, to anger, to love, and fear-- Mooshes exhibit a vast range of
+                                emotions, often disregarded due to the outer attitude they exhibit towards the world.
+                            </p>
+                        </div>
+                        <div class="text-container right">
+                            <p>With this in mind, we want to bring the complexity of the Moosh to the forefront of the
+                                academic conversation. Not only to showcase, but to exhibit, the multi faceted, complex
+                                being, which is the Moosh.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="slide">
+                    <div class="part">
+                        <h2>Art</h2>
+                        <div class="images-grid">
+                            <div class="image-container"><img src="/Homepage/Gallery/1.webp" alt="1.webp"
+                                    loading="lazy">
+                                <p>Moosh 1</p>
+                            </div>
+                            <div class="image-container"><img src="/Homepage/Gallery/2.webp" alt="2.webp"
+                                    loading="lazy">
+                                <p>Moosh 2</p>
+                            </div>
+                            <div class="image-container"><img src="/Homepage/Gallery/3.webp" alt="3.webp"
+                                    loading="lazy">
+                                <p>Moosh 3</p>
+                            </div>
+                            <div class="image-container"><img src="/Homepage/Gallery/4.webp" alt="4.webp"
+                                    loading="lazy">
+                                <p>Moosh 4</p>
+                            </div>
+                            <div class="image-container"><img src="/Homepage/Gallery/5.webp" alt="5.webp"
+                                    loading="lazy">
+                                <p>Moosh 5</p>
+                            </div>
+                            <div class="image-container"><img src="/Homepage/Gallery/6.webp" alt="6.webp"
+                                    loading="lazy">
+                                <p>Moosh 6</p>
+                            </div>
+                            <div class="image-container"><img src="/Homepage/Gallery/7.webp" alt="7.webp"
+                                    loading="lazy">
+                                <p>Moosh 7</p>
+                            </div>
+                            <div class="image-container"><img src="/Homepage/Gallery/8.webp" alt="8.webp"
+                                    loading="lazy">
+                                <p>Moosh 8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part">
+                        <p>You're not special, you know? Never have been, never will be. Us though? Bro... We're
+                            MOOSHES. Each of us is more unique than your favorite collection :)</p>
+                    </div>
+                </section>
+                <section class="slide">
+                    <div class="part">
+                        <h2>Community</h2>
+                        <p>As Mooshes ourselves, we understand that many of you, like us, have been exiled from our
+                            families and friend groups for a variety of reasons. Whether you banged your buddies mom,
+                            bullied that one kid, leaked your sisters nudes, or ran over the neighborhood grandma's
+                            mailbox in your PT Cruiser, we're here for you.</p>
+                    </div>
+                    <div class="part">
+                        <div class="info-grid">
+                            <div class="info-container">
+                                <h3>Supply</h3>
+                                <p>Mooshes is a 4,444 supply project.</p>
+                            </div>
+                            <div class="info-container">
+                                <h3>Cost</h3>
+                                <p>For the public, each Moosh costs $1. Mooshlist? Yours is free!</p>
+                            </div>
+                            <div class="info-container">
+                                <h3>Benefits</h3>
+                                <p>Welcome to the worst community on the internet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <w3m-modal></w3m-modal>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('.carousel').carousel();
+    });
+  </script>
+
+</body>
+
+</html>
